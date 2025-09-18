@@ -1,0 +1,38 @@
+
+
+.header {
+    background-color: rgb(252, 205, 148);
+    color: rgb(192, 112, 13);
+    height: 50px;
+}
+
+.ulMenu {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    font-size: 22px;
+}
+
+.ulSubMenu {
+    font-size: 18px;
+    padding-left: 10px;
+    max-width: 0;
+    overflow: hidden;
+    
+}
+
+.liMenu>ul:hover {
+    overflow: visible;
+    
+}
+
+.link {
+    transition: .2s;
+}
+.link:hover {
+    color: rgb(240, 161, 64);
+    background-color: rgb(158, 89, 5);
+    border-radius: 4px;
+    padding: 4px;
+    transition: .2s;
+}
