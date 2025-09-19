@@ -12,6 +12,7 @@ export default function Header() {
                 {show &&
                     <div style={{ height: '200px', border: '2px solid black' }}>
                         <p>MOBILE</p>
+                        <image s></>
                     </div>
                 }
             </header>
