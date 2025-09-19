@@ -1,9 +1,7 @@
-
-
 .header {
-    background-color: rgb(252, 205, 148);
-    color: rgb(192, 112, 13);
-    height: 50px;
+    height: 100px;
+    background-color: aqua;
+    padding: 10px;
 }
 
 .ulMenu {
@@ -16,23 +14,21 @@
 .ulSubMenu {
     font-size: 18px;
     padding-left: 10px;
-    max-width: 0;
+    max-height: 0;
     overflow: hidden;
-    
+    transition: max-height 1s ease-in;
 }
 
-.liMenu>ul:hover {
-    overflow: visible;
-    
+.liMenu:hover .ulSubMenu {
+    max-height: 100vh;
 }
 
-.link {
-    transition: .2s;
+
+.liMenu,
+.liSubMenu {
+    list-style-type: none;
 }
+
 .link:hover {
-    color: rgb(240, 161, 64);
-    background-color: rgb(158, 89, 5);
-    border-radius: 4px;
-    padding: 4px;
-    transition: .2s;
+    color: darkgray;
 }

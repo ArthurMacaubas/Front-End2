@@ -2,7 +2,7 @@ import "./globals.css";
 import Header from "@/components/Header"
 
 export const metadata = {
-  title: "Criando um app next",
+  title: "Macaúbas",
   description: "Descrição do meu app next",
 };
 

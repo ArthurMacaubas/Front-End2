@@ -1,10 +1,10 @@
 "use client";
 import { useState } from "react";
 import styles from "./page.module.css";
-import Link from "next/link";
 
 export default function Home() {
   const [cont, setCont] = useState(0);
+  const [estilo, setEstilo] = useState("colorido")
 
   const excluir = () => {
     setCont(cont - 1);
@@ -24,6 +24,10 @@ export default function Home() {
       <button onClick={() => adicionar()}>Adicionar</button>
       <button onClick={() => excluir()}>Excluir</button>
       <p>Contagem {cont}</p>
+
+      <button onClick={() => {setEstilo("colorido")}}>Estilo 1</button>
+      <button onClick={() => {setEstilo("cinza")}}>Estilo 2</button>
+      <div className={`${styles.box} ${estilo === "colorido" ? styles.colorido : styles.cinza}`}></div>
     </div>
   );
 }
